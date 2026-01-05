@@ -3,3 +3,5 @@ conv*
 par*
 python*
 data/*
+.env
+__pycache__

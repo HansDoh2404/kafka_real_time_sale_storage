@@ -122,10 +122,10 @@ Outils à installer avant de débuter
 5. Se rendre vers http://localhost:9001 pour créer les chemins *sales* et *checkpoints* dans le bucket *warehouse*
 
 6. Exécutions du producer et du consumer :
-
-   *python3 producer.py*
-   *python3 consumer.py*
-
+    ```sh
+     python3 producer.py
+     python3 consumer.py
+    ```
 <!-- CONTACT -->
 ## Contact
 
@@ -149,6 +149,7 @@ Lien du projet: https://github.com/HansDoh2404/kafka_real_time_sale_storage.git
 [python]: https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python&logoColor=white
 [python-url]: https://docs.python.org/3/
 [kafka]: https://img.shields.io/badge/kafka-black?style=for-the-badge&logo=apache-kafka&logoColor=white&color=black
+[kafka-url]: https://kafka.apache.org/41/getting-started/introduction/
 [nessie-url]: https://docs.python.org/3/
 [pyspark]: https://img.shields.io/badge/pyspark-orange?style=for-the-badge&logo=apache-spark&logoColor=white&color=orange
 [spark-url]: https://spark.apache.org/
