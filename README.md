@@ -83,12 +83,19 @@ Outils à installer avant de débuter
    cd kafka_real_time_sale_storage
    ```
 
-3. Après s'être assuré que docker-engine ou docker-desktop est lancé, exécuter :
+3. Créer l'environnement virtuel et installer les dépendances
+   ```sh
+   python -m venv .env
+   source .env/bin/activate
+   pip install -r requirements.txt
+   ```
+
+4. Après s'être assuré que docker-engine ou docker-desktop est lancé, exécuter :
    ```sh
    docker compose up -d
    ```
 
-4. Exécuter la commande de création du topic et d'autres si nécesssaires
+5. Exécuter la commande de création du topic et d'autres si nécesssaires
    ```sh
     -- Créer le topic : à exécuter absolument
     docker exec -it kafka kafka-topics \
@@ -119,9 +126,9 @@ Outils à installer avant de débuter
    ```
 
 
-5. Se rendre vers http://localhost:9001 pour créer les chemins *sales* et *checkpoints* dans le bucket *warehouse*
+6. Se rendre vers http://localhost:9001 pour créer les chemins *sales* et *checkpoints* dans le bucket *warehouse*
 
-6. Exécutions du producer et du consumer :
+7. Exécutions du producer et du consumer :
     ```sh
      python3 producer.py
      python3 consumer.py
