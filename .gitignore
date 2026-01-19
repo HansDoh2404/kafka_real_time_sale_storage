@@ -1,7 +1,11 @@
-jars/*
+jars/
+jars.
 conv*
 par*
 python*
 data/*
-.env
-__pycache__
+.env/
+.env.*
+.__pycache__.
+_pycache__/*
+*.pyc
