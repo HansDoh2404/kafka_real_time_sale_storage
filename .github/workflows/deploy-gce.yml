@@ -31,9 +31,4 @@ jobs:
 
       - name: Deploy with Docker Compose
         run: |
-          ssh ${{ secrets.GCE_USER }}@${{ secrets.GCE_HOST }} << 'EOF'
-            cd ${{ secrets.GCE_APP_PATH }}
-            sudo docker compose pull
-            sudo docker compose up -d
-          EOF
-
+          ssh ${{ secrets.GCE_USER }}@${{ secrets.GCE_HOST }} "cd ${{ secrets.GCE_APP_PATH }} && sudo docker compose up -d --build"
