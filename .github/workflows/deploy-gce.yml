@@ -31,5 +31,5 @@ jobs:
 
       - name: Deploy with Docker Compose
         run: |
-          ssh ${{ secrets.GCE_USER }}@${{ secrets.GCE_HOST }} "cd ${{ secrets.GCE_APP_PATH }} && docker compose down -v && docker compose up -d --build"
+          ssh ${{ secrets.GCE_USER }}@${{ secrets.GCE_HOST }} "cd ${{ secrets.GCE_APP_PATH }} && docker compose up -d"
 
